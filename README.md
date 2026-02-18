@@ -39,17 +39,6 @@ http://localhost:80
 docker compose -f compose.yml down
 ```
 
-## Publicar no GitHub
-
-```bash
-git init
-git add .
-git commit -m "Projeto DIO: Apache com Docker Compose e pagina web completa"
-git branch -M main
-git remote add origin https://github.com/SEU-USUARIO/docker-projeto1-dio.git
-git push -u origin main
-```
-
 ## Tecnologias
 
 - Docker
