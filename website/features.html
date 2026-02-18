@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Features | Simulador de Fila e Pilha</title>
+  <meta name="description" content="Simulador interativo de estruturas de dados: fila e pilha.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="bg-shape"></div>
+
+  <header class="hero">
+    <p class="badge">Features</p>
+    <h1>Simulador de Fila e Pilha</h1>
+    <p class="subtitle">
+      Estruturas de dados em JavaScript puro para visualizar operacoes em tempo real.
+    </p>
+    <div class="hero-actions">
+      <button id="themeButton" class="btn btn-primary">Alternar tema</button>
+      <a class="btn btn-ghost" href="./index.html">Voltar para inicio</a>
+    </div>
+  </header>
+
+  <main class="simulator-layout">
+    <section class="card simulator-card">
+      <h2>Fila (Queue)</h2>
+      <p class="simulator-note">FIFO: primeiro a entrar, primeiro a sair.</p>
+      <div class="control-row">
+        <input id="queueInput" class="input" type="text" placeholder="Digite um valor para fila">
+        <button id="enqueueBtn" class="btn btn-primary" type="button">Enqueue</button>
+        <button id="dequeueBtn" class="btn btn-ghost" type="button">Dequeue</button>
+      </div>
+      <div id="queueView" class="slots" aria-live="polite"></div>
+      <p id="queueStatus" class="status-line">Fila vazia.</p>
+    </section>
+
+    <section class="card simulator-card">
+      <h2>Pilha (Stack)</h2>
+      <p class="simulator-note">LIFO: ultimo a entrar, primeiro a sair.</p>
+      <div class="control-row">
+        <input id="stackInput" class="input" type="text" placeholder="Digite um valor para pilha">
+        <button id="pushBtn" class="btn btn-primary" type="button">Push</button>
+        <button id="popBtn" class="btn btn-ghost" type="button">Pop</button>
+      </div>
+      <div id="stackView" class="slots vertical" aria-live="polite"></div>
+      <p id="stackStatus" class="status-line">Pilha vazia.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Simulador didatico feito com HTML, CSS e JavaScript.</p>
+  </footer>
+
+  <script src="./features.js"></script>
+</body>
+</html>

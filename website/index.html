@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Docker + Apache | Projeto DIO</title>
+  <meta name="description" content="Projeto web executado com Docker Compose e Apache.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="bg-shape"></div>
+  <header class="hero">
+    <p class="badge">Desafio DIO</p>
+    <h1>Aplicação Web com Docker Compose + Apache</h1>
+    <p class="subtitle">
+      Página estática executando em container <strong>httpd</strong>, com HTML, CSS e JavaScript.
+    </p>
+    <div class="hero-actions">
+      <button id="themeButton" class="btn btn-primary">Alternar tema</button>
+      <a class="btn btn-primary" href="./features.html">Simulador de filas e pilhas</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="features" class="card-grid">
+      <article class="card">
+        <h2>Container Apache</h2>
+        <p>Servidor HTTP rodando em Docker com publicação de porta e volume para os arquivos do site.</p>
+      </article>
+      <article class="card">
+        <h2>Frontend completo</h2>
+        <p>Layout responsivo com animações leves, identidade visual e interações em JavaScript.</p>
+      </article>
+      <article class="card">
+        <h2>Portfólio no GitHub</h2>
+        <p>Estrutura pronta para versionar e publicar como projeto de portfólio técnico.</p>
+      </article>
+    </section>
+
+    <section class="card cta">
+      <h2>Status do projeto</h2>
+      <p id="statusText">Ambiente inicializando...</p>
+      <small>Hora local: <span id="clock">--:--:--</span></small>
+    </section>
+  </main>
+
+  <footer>
+    <p>Feito para o desafio Docker da DIO.</p>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
